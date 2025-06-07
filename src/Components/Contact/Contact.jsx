@@ -43,7 +43,7 @@ return (
                 <p>"Please let me know the topic you would like to discuss."</p>
                 <div className="contact-details">
                     <div className="contact-detail">
-                        <img src={mail_icon} alt="" /> <p>goku@gmail.com</p>
+                        <img src={mail_icon} alt="" /> <p>vivekmishra01010@gmail.com</p>
                     </div>
                     <div className="contact-detail">
                         <img src={call_icon} alt=""/> <p>+91 7524XXXXX</p>
