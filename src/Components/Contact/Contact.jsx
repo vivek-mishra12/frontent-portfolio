@@ -56,7 +56,7 @@ return (
             <form onSubmit={onSubmit} className='contact-right'>
                 <label htmlFor="">Your Name</label>
                 <input type="text" placeholder='Enter your name' name='name' />
-                <label htmlFor="">Your Email</label>
+                <label htmlFor="">Enter provided email</label>
                 <input type="email" placeholder='Enter your email' name='email'/>
                 <label htmlFor="">Write your message here</label>
                 <textarea name="message" rows={8} placeholder='Enter your message'></textarea>
