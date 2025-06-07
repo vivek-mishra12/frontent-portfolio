@@ -1,0 +1,221 @@
+.navbar{
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    margin: 20px 170px;
+}
+.navbar img{
+    margin-left: -55px;
+}
+.nav-menu{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 60px;
+    font-size: 20px;
+}
+.nav-connect{
+  display: flex;
+  align-items: center; /* Vertically center all children */
+  justify-content: space-between;
+  padding: 20px 40px;
+  font-size: 22px;
+}
+
+.nav-connect {
+  position: relative;
+  padding: 18px 30px;
+  border-radius: 50px;
+  background: linear-gradient(250deg, #2b1055 0%, #3aaeec 50%, #309a5f 100%);
+  color: white;
+  font-weight: 500;
+  z-index: 1;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  overflow: hidden;
+}
+
+.nav-menu {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+  font-weight: 500;
+}
+
+.nav-menu li {
+  position: relative;
+  padding: 10px 20px;
+  border-radius: 30px;
+  cursor: pointer;
+  color: white;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+/* Create the glowing border effect on hover */
+.nav-menu li::before {
+  content: '';
+  position: absolute;
+  top: -3px;
+  left: -3px;
+  right: -3px;
+  bottom: -3px;
+  border-radius: 36px;
+  background: linear-gradient(
+    270deg,
+    #ff0080,
+    #7928ca,
+    #2af598,
+    #fad961,
+    #ff0080
+  );
+  background-size: 300% 300%;
+  z-index: -1;
+  opacity: 0;
+  filter: blur(6px);
+  transition: opacity 0.4s ease, filter 0.4s ease;
+}
+
+/* Hover effect activates glow */
+.nav-menu li:hover::before {
+  opacity: 0.6;
+  animation: border-glow 6s ease infinite;
+  filter: blur(10px);
+}
+
+.nav-menu li:hover {
+  transform: translateY(-2px);
+  color: #0f0e06; /* Optional: highlight text color */
+}
+
+/* Same glowing animation as nav-connect */
+@keyframes border-glow {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+
+/* Persistent border glow effect */
+.nav-connect::before {
+  content: '';
+  position: absolute;
+  top: -3px;
+  left: -3px;
+  right: -3px;
+  bottom: -3px;
+  background: linear-gradient(
+    270deg,
+    #ff0080,
+    #7928ca,
+    #2af598,
+    #fad961,
+    #ff0080
+  );
+  background-size: 300% 300%;
+  filter: blur(6px);
+  border-radius: 60px;
+  z-index: -1;
+  opacity: 0.4; /* visible even without hover */
+  animation: border-glow 6s ease infinite;
+  transition: opacity 0.3s ease, filter 0.3s ease;
+}
+
+.nav-connect:hover::before {
+  opacity: 0.9;
+  filter: blur(12px);
+}
+
+.nav-connect:hover {
+  transform: translateY(-4px);
+}
+
+/* Gradient animation */
+@keyframes border-glow {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.nav-menu li{
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px; 
+}
+
+.nav-menu li img{
+  display: flex;
+  margin: auto; 
+}
+
+.anchor-link{
+  text-decoration: none;
+  color: rgb(250, 247, 244);
+}
+
+.nav-mob-close{
+  display: none;
+}
+
+.nav-mob-open{
+  display: none;
+}
+
+@media(max-width: 768px){
+  .navbar{
+    margin: 20px 50px;
+  }
+  .nav-connect{
+    display: none;
+  }
+  .nav-mob-open{
+    display: block;
+    position: fixed;
+    right: 30px;
+
+  }
+
+  .nav-mob-close{
+    display: block;
+    position: relative;
+    top: 30px;
+    left: 290px;
+    width: 30px;
+  }
+
+  .nav-menu{
+    position: fixed;
+    flex-direction: column;
+    align-items: start;
+    top: 0;
+    gap: 30px;
+    background-color: #1f0016;
+    width: 350px;
+    height: 100%;
+    z-index: 2;
+    transition: right 0.5s;
+    right: -350px;
+  }
+
+  .nav-menu li{
+    font-size: 30px;
+    padding-left: 100px;
+    flex-direction: row;
+    gap: 20px;
+  }
+}
+
+
+
