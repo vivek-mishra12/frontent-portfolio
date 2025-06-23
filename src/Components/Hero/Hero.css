@@ -92,11 +92,13 @@
 }
 
 .hero-resume {
-    padding: 25px 75px;
-    border-radius: 50px;
-    border: 2px solid #DF8908; /* static border color */
-    cursor: pointer;
-    transition: box-shadow 0.3s ease;
+  padding: 25px 75px;
+  border-radius: 50px;
+  border: 2px solid #DF8908; /* static border */
+  cursor: pointer;
+  transition: border-color 0.3s ease;
+  color: #c3f5f9;
+  text-decoration: none; 
 }
 
 /* On hover: glowing animated border effect */
