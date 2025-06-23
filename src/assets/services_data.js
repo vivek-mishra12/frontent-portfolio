@@ -28,15 +28,10 @@ const Services_Data = [
     link:"https://vivek-mishra12.github.io/Currency-Converter/"
   },
  
-  {
-    P_no: "05",
-    P_name: "MERN portfolio",
-    P_desc: "It is a personal website built with MERN.",
-    link: ""
-  },
+
   
    {
-    P_no: "06",
+    P_no: "05",
     P_name: "LeetCode Profile",
     P_desc: "It is my Leetcode Profile.",
     link: "https://leetcode.com/u/vivekmishra123-_/"
