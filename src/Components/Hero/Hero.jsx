@@ -11,7 +11,14 @@ const Hero = () => {
         <p>I am a MERN Stack Developer. Alongside my development work, I’m continuously improving my understanding of Data Structures and Algorithms (DSA) using C++.</p>
         <div className="hero-action">
             <div ><AnchorLink className="hero-connect" offset={50} href='#contact'>Connect With me </AnchorLink></div>
-            <div className="hero-resume">My resume</div>
+            <a
+              href="https://drive.google.com/file/d/1HrwOy7WaJ8Tte_f6uyhcQpCaAv8R80TR/view?usp=sharing"
+               className="hero-resume"
+              target="_blank"
+             rel="noopener noreferrer"
+  >
+    My resume
+  </a>
         </div>
     </div>
 

@@ -13,27 +13,14 @@ const Services_Data = [
     link: "https://my-first-project-ual0.onrender.com/listings"
   },
 
- 
-  {
-    P_no: "03",
-    P_name: "Tic-Tac-Toe",
-    P_desc: "It is a two-player game.",
-    link: "https://vivek-mishra12.github.io/TIK_TAK_toe/"
-  },
 
    {
     P_no: "04",
     P_name: "Currency Converter",
     P_desc: "Project allows users to convert amounts between different currencies.",
-    link:"https://vivek-mishra12.github.io/Currency-Converter/"
+    link:"https://music-room-umber.vercel.app/"
   },
  
-  {
-    P_no: "05",
-    P_name: "MERN portfolio",
-    P_desc: "It is a personal website built with MERN.",
-    link: ""
-  },
   
    {
     P_no: "06",
