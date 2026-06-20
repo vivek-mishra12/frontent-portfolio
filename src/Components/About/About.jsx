@@ -17,7 +17,7 @@ const About = () => {
             </div>
             <div className="about-right">
                 <div className="about-para">
-                    <p>I’m a passionate MERN Stack Developer with a solid foundation in building dynamic and responsive web applications. Alongside my development journey, I’ve also explored Data Structures and Algorithms using C++, which has strengthened my problem-solving skills. While I’m still refining my mastery in DSA, I enjoy the learning process and continually strive to improve.</p>
+                    <p>I’m an enthusiastic developer with a strong interest in both MERN stack development and Data Structures & Algorithms (DSA) using C++. While I’m still building my expertise in MERN, I have a comparatively stronger command over DSA, which has enhanced my logical thinking and problem-solving abilities. I enjoy the continuous learning process in both areas and am committed to growing as a well-rounded developer.</p>
                     <p> I'm especially enthusiastic about working on real-time projects that bring ideas to life and offer practical, hands-on experience.</p>
                 </div>
                 <br />
